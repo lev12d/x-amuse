@@ -1,0 +1,14 @@
+.x-switch{display: inline-block;width: 44px;height: 22px;font-size: 12px;color: #fff;line-height: 20px;vertical-align: middle;border-radius: 22px;border: 1px solid #ccc;background: #ccc;cursor: pointer;position: relative;user-select: none;transition: all .2s ease-in-out}
+.x-switch .x-switch-custom{display: inline-block;}
+.x-switch.is-disabled{opacity: .5;}
+.x-switch.is-disabled:hover{cursor: not-allowed}
+.x-switch.x-switch-close .x-switch-custom{position: absolute;top: 50%;right: 16%;transform: translate(0,-50%)}
+.x-switch.x-switch-open .x-switch-custom{position: absolute;top: 50%;left: 16%;transform: translate(0,-50%)}
+.x-switch.x-switch-close::before{content: "";width: 18px;height: 18px;background: #fff;border-radius: 50%;position: absolute;left: 1px;top: 1px;transition: all 0.3s}
+.x-switch.x-switch-open{background: #2d8cf0}
+.x-switch.x-switch-open::before{content: "";width: 18px;height: 18px;background: #fff;border-radius: 50%;position: absolute;left: 23px;top: 1px;transition: all 0.3s}
+.x-switch.x-switch-large{width: 56px}
+.x-switch.x-switch-large.x-switch-open::before{left: 35px;}
+.x-switch.x-switch-small{width: 28px;height: 16px;}
+.x-switch.x-switch-small::before{width: 12px;height: 12px;}
+.x-switch.x-switch-small.x-switch-open::before{left: 14px;}

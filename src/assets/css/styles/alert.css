@@ -1,0 +1,16 @@
+.x-alert{box-sizing: border-box;padding: 10px 16px 6px;border: 1px solid #98c8f8;font-size: 13px;border-radius: 4px;background: #f4f4f5;color: #909399}
+.x-alert-success{background: #edfff3;color: #67c23a;border: 1px solid #8ce6b0;}
+.x-alert-warning{border: 1px solid #ffd77a;background: #fff9e6;color: #e6a23c}
+.x-alert-error{border: 1px solid #ffb08f;background: #ffefe6;color: #f56c6c}
+.x-alert .x-alert-content{display: flex;justify-content: space-between;align-items: center;flex-wrap: wrap;line-height: 1;}
+.x-alert .x-alert-content .x-alert-text{width: 90%;text-align: left}
+.x-alert .x-alert-content .x-alert-close{width: 10%;text-align: right;}
+.x-alert .x-alert-content .x-alert-close .x-iconclose:hover{display: inline-block;cursor: pointer;transform: rotate(360deg);transition: .5s linear; }
+.x-alert .x-alert-content .x-alert-custom-text{width:10%;text-align: right;}
+.x-alert .x-alert-content .x-alert-custom-text-inner:hover{cursor: pointer;}
+.x-alert .x-alert-content .x-alert-text i{font-size: 13px}
+.x-alert .x-alert-content .x-alert-desc{font-size: 12px;padding-top: 5px;margin-left: 16px;text-align: left}
+
+.x-alert-fade-leave{opacity: 1;}
+.x-alert-fade-leave-active{opacity: 0;transition: all .4s ease-out}
+

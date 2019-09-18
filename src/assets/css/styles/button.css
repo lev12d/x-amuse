@@ -1,0 +1,29 @@
+    .x-button{display: inline-block;padding: 9px 15px;color: #515a6e;background: white;cursor: pointer;box-sizing: border-box;
+    border: 1px solid #dcdee2;border-radius: 4px;outline: none;user-select: none;font-size: 14px;font-weight: 400;white-space: nowrap; margin: 0;line-height: 1}
+    .x-button-default:hover{border-color:#38A0F3;color: #2D92E2; } 
+    .x-button-default:focus{border-color:#38A0F3;box-shadow: 0 0 4px #2D92E2;color: #197BC9}
+    .x-button-primary{background: #2b85e4;color: white}
+    .x-button-info{background: #5cadff;color: white}
+    .x-button-success{background: #19be6b;color: white}
+    .x-button-warning{background: #f90;color: white}
+    .x-button-error{background: #ed4014;color: white}
+    .x-button-large{padding: 12px 25px;}
+    .x-button-small{padding: 6px 10px;}
+    .x-button-primary:hover,.x-button-info:hover,.x-button-success:hover,.x-button-warning:hover,.x-button-error:hover{opacity: .7;}
+    .x-button-primary:focus,.x-button-info:focus,.x-button-success:focus,.x-button-warning:focus,.x-button-error:focus{opacity: .7;}
+    .x-button.is-disabled{opacity: 0.3;}
+    .x-button.is-disabled:hover{cursor: not-allowed}
+    .x-button.is-round{border-radius: 20px}
+    .x-button.is-circle{width: 32px;height: 32px;border-radius: 50%;padding: 0;}
+    .x-button.is-long{width: 100%}
+    @keyframes spin{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+    .x-button.is-loading .x-iconjiazaizhong{display: inline-block;animation: spin 1s linear infinite}
+    
+    
