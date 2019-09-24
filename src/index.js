@@ -6,6 +6,7 @@ import XAlert from './lib/package/alert/index.js'
 import XTipsMessage from './lib/package/tips-message/index.js'
 import XDrawer from './lib/package/drawer/index.js'
 import XSwitch from './lib/package/switch/index.js'
+import XCheckbox from './lib/package/checkbox/index.js'
 
 const components = [
     XButton,
@@ -13,7 +14,8 @@ const components = [
     XIcon,
     XAlert,
     XDrawer,
-    XSwitch
+    XSwitch,
+    XCheckbox
 ]
 
  const install = function(Vue, options = {}){
@@ -38,5 +40,6 @@ if (typeof window !== 'undefined' && window.Vue) {
       XAlert,
       XTipsMessage,
       XDrawer,
-      XSwitch
+      XSwitch,
+      XCheckbox
   }

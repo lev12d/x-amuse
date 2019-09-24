@@ -6,6 +6,7 @@
    }]"
     @click="handleClick"
     ref="switch"
+    :style="values?{background:openBgColor}:{background:closeBgColor}"
   >
     <span class="x-switch-custom" v-if="values">
       <slot name="open"></slot>
@@ -43,19 +44,8 @@ export default {
       }
     }
   },
-  created(){
-      this.$nextTick(()=>{
-
-        //    if(this.openBgColor||this.closeBgColor){
-        //          if(this.values){
-        //              this.$refs.switch.style.background = this.openBgColor;
-        //              return;
-        //          }
-        //          console.log(this.values)
-        //          this.$refs.switch.style.background = this.closeBgColor;
-        //    }
-      })
-  }
+ 
+ 
 };
 </script>
 

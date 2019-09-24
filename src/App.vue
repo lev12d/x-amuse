@@ -85,6 +85,9 @@
             <x-switch disabled></x-switch>
            <h4>自定义背景颜色的switch开关</h4>
             <x-switch open-bg-color="red" close-bg-color="yellow"></x-switch>
+
+            <h3>checkbox多选框</h3>
+            <x-checkbox v-model="checked" @change="aaa">选项</x-checkbox>
   </div>
 </template>
 
@@ -96,7 +99,8 @@ export default {
       flag:false,
       flag2:false,
       str:'左边头部',
-      switchFlag:false
+      switchFlag:false,
+      checked:false
     }
   },
   methods:{
@@ -121,6 +125,10 @@ export default {
         message:'现在的状态为：'+status,
         type:'error'
       })
+    },
+    aaa(evt){
+      // console.log(evt)
+       console.log(this.checked)
     }
   }
 }
