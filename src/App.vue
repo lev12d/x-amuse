@@ -88,6 +88,15 @@
 
             <h3>checkbox多选框</h3>
             <x-checkbox v-model="checked" @change="aaa">选项</x-checkbox>
+
+            <h3>popup弹出层</h3>
+            <x-popup v-model="popupVal">
+               <div slot="footer">
+                   <x-button @click="popupVal=false">取消</x-button>
+                   <x-button type="primary" @click="popupVal=false">确认</x-button>
+               </div>
+            </x-popup>
+            <x-button @click="handleCk">弹出层</x-button>
   </div>
 </template>
 
@@ -100,7 +109,8 @@ export default {
       flag2:false,
       str:'左边头部',
       switchFlag:false,
-      checked:false
+      checked:false,
+      popupVal:false
     }
   },
   methods:{
@@ -129,6 +139,15 @@ export default {
     aaa(evt){
       // console.log(evt)
        console.log(this.checked)
+    },
+    handleCk(){
+      this.popupVal = true
+    },
+
+  },
+  watch:{
+    popupVal(){
+      console.log(this.popupVal)
     }
   }
 }

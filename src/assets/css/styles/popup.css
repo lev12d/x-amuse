@@ -1,0 +1,18 @@
+.x-popup{width: 400px;border-radius: 5px;position: fixed;top:20%;left: 0;right: 0;margin:0 auto;background: #fff;z-index: 99;box-shadow: 0 0 40px rgba(0, 0, 0, .3)}
+.x-popup-header{border-bottom: 1px solid #e8eaec;padding: 14px;background: #f6f6f6;border-top-left-radius: 5px;border-top-right-radius: 5px}
+.x-popup-header .x-popup-header-inner{text-align: left}
+.x-popup-body{padding: 20px;text-align: left;font-size: 14px}
+.x-popup-footer .x-popup-footer-inner{padding: 10px 0 10px 0;}
+.mask{background: rgba(0, 0, 0, .7);position: fixed;left: 0;top: 0;bottom: 0;right: 0;z-index: 98;transition: all .4s ease-in-out}
+
+.x-popup-fade-enter,.x-popup-fade-leave-active{animation: scale-out .4s ease-in-out}
+.x-popup-fade-leave,.x-popup-fade-enter-active{animation: scale-in .4s ease-in-out}
+/* .x-scale{animation: scale .64s ease-in-out} */
+@keyframes scale-in{
+    0% {opacity: 0; -ms-transform: scale(.5); transform: scale(.5);}
+    100% {opacity: 1; -ms-transform: scale(1); transform: scale(1);}
+}
+@keyframes scale-out{
+    0% {opacity: 1; -ms-transform: scale(1); transform: scale(1);}
+    100% {opacity: 0; -ms-transform: scale(.5); transform: scale(.5);}
+}

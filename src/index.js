@@ -7,6 +7,7 @@ import XTipsMessage from './lib/package/tips-message/index.js'
 import XDrawer from './lib/package/drawer/index.js'
 import XSwitch from './lib/package/switch/index.js'
 import XCheckbox from './lib/package/checkbox/index.js'
+import XPopup from './lib/package/popup/index.js'
 
 const components = [
     XButton,
@@ -15,7 +16,8 @@ const components = [
     XAlert,
     XDrawer,
     XSwitch,
-    XCheckbox
+    XCheckbox,
+    XPopup
 ]
 
  const install = function(Vue, options = {}){
@@ -41,5 +43,6 @@ if (typeof window !== 'undefined' && window.Vue) {
       XTipsMessage,
       XDrawer,
       XSwitch,
-      XCheckbox
+      XCheckbox,
+      XPopup
   }
