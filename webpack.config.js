@@ -6,7 +6,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'index.js',
+    filename: 'xAmuse.js',
     libraryTarget: 'umd',
     umdNamedDefine: true
   },

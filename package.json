@@ -1,11 +1,11 @@
 {
   "name": "x-amuse",
   "description": "A Vue.js 2.0 UI Toolkit for Web",
-  "version": "0.0.4",
+  "version": "0.0.8",
   "author": "xhj <1411693091@qq.com>",
   "license": "MIT",
   "private": false,
-  "main": "dist/index.js",
+  "main": "dist/xAmuse.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --inline --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
@@ -31,5 +31,10 @@
     "vue-template-compiler": "^2.4.4",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1"
+  },
+  "keywords": ["x-amuse","UI","vue"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jackszz/x-amuse"
   }
 }

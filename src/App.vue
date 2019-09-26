@@ -90,7 +90,9 @@
             <x-checkbox v-model="checked" @change="aaa">选项</x-checkbox>
 
             <h3>popup弹出层</h3>
-            <x-popup v-model="popupVal">
+            <x-popup v-model="popupVal" title="提示">
+              这是一个弹出层zz
+              <!-- <span slot="header" class="a">555</span> -->
                <div slot="footer">
                    <x-button @click="popupVal=false">取消</x-button>
                    <x-button type="primary" @click="popupVal=false">确认</x-button>
@@ -131,10 +133,11 @@ export default {
       this.flag2 = !this.flag2
     },
     handleChange(status){
-      this.$tips({
-        message:'现在的状态为：'+status,
-        type:'error'
-      })
+      // this.$tips({
+      //   message:'现在的状态为：'+status,
+      //   type:'error'
+      // }) 或者
+      this.$tips.success('现在的状态为：'+ status)
     },
     aaa(evt){
       // console.log(evt)
@@ -147,7 +150,7 @@ export default {
   },
   watch:{
     popupVal(){
-      console.log(this.popupVal)
+     // console.log(this.popupVal)
     }
   }
 }
@@ -185,4 +188,5 @@ li {
 a {
   color: #42b983;
 }
+
 </style>

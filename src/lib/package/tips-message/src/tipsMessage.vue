@@ -16,7 +16,7 @@ export default {
     return {
       message: "",
       visible: false,
-      duration: 0,
+      duration: 3000,
       type: "",
       top:25,
       closed:false,
@@ -57,6 +57,7 @@ export default {
         // if (typeof this.onClose === 'function') {
         //   this.onClose(this);
         // }
+
      },
     startTimer(){
        if(this.duration>0){
@@ -76,7 +77,7 @@ export default {
         if(newVal){
          this.visible = false
         }
-     }
+     } 
   },
   mounted(){
     this.startTimer()
