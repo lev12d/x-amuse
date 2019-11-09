@@ -22,7 +22,7 @@
     </transition>
 
     <transition>
-      <div class="mask" v-show="close" ></div>
+      <div class="x-popup-mask" v-show="close" ></div>
     </transition>
   </div>
 </template>

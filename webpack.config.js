@@ -1,12 +1,14 @@
 var path = require('path')
 var webpack = require('webpack')
+var HtmlWebpackPlugin = require('html-webpack-plugin')
+var ExtractTextWebpackPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
-  entry: './src/main.js',
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
-    filename: 'xAmuse.js',
+    publicPath: '/dist',
+    filename: 'js/xAmuse.js',
     libraryTarget: 'umd',
     umdNamedDefine: true
   },
@@ -14,10 +16,10 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: [
-          'vue-style-loader',
-          'css-loader'
-        ],
+        use: ExtractTextWebpackPlugin.extract({
+          fallback:'style-loader',
+          use:'css-loader'
+        })
       },      {
         test: /\.vue$/,
         loader: 'vue-loader',
@@ -60,6 +62,12 @@ module.exports = {
     noInfo: true,
     overlay: true
   },
+  plugins:[
+    
+    new ExtractTextWebpackPlugin({
+       filename:'css/styles.css'
+    })
+  ],
   performance: {
     hints: false
   },

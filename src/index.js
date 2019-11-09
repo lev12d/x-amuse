@@ -1,4 +1,4 @@
-
+import './assets/css/styles/index.css'
 import XButton from './lib/package/button/index.js'
 import XButtonGroup from './lib/package/button-group/index.js'
 import XIcon from './lib/package/icon/index.js'
@@ -8,6 +8,7 @@ import XDrawer from './lib/package/drawer/index.js'
 import XSwitch from './lib/package/switch/index.js'
 import XCheckbox from './lib/package/checkbox/index.js'
 import XPopup from './lib/package/popup/index.js'
+import XTooltip from './lib/package/tooltip/index.js'
 
 const components = [
     XButton,
@@ -17,7 +18,8 @@ const components = [
     XDrawer,
     XSwitch,
     XCheckbox,
-    XPopup
+    XPopup,
+    XTooltip
 ]
 
  const install = function(Vue, options = {}){
@@ -44,5 +46,6 @@ if (typeof window !== 'undefined' && window.Vue) {
       XDrawer,
       XSwitch,
       XCheckbox,
-      XPopup
+      XPopup,
+      XTooltip
   }

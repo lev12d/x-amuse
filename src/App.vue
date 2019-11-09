@@ -99,6 +99,13 @@
                </div>
             </x-popup>
             <x-button @click="handleCk">弹出层</x-button>
+            <h3>文字提示</h3>
+            <x-tooltip content="这是一段hover触发的提示信息" :disabled="false" trigger="hover">
+                <x-button>hover触发</x-button>
+            </x-tooltip> <br>
+            <x-tooltip content="这是一段click触发的提示信息" :disabled="false" trigger="click">
+                <x-button>click触发</x-button>
+            </x-tooltip>
   </div>
 </template>
 

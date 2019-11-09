@@ -54,12 +54,13 @@ export default {
   watch: {
     value(newVal) {
       if (newVal) {
-        document.body.style.overflowX = "hidden";
-        document.body.style.overflowY = "hidden";
-        return;
+         let top = document.scrollingElement.scrollTop
+         document.onscroll = function(){
+            document.scrollingElement.scrollTop = top
+         }
+          return;
       }
-      document.body.style.overflowX = "auto";
-      document.body.style.overflowY = "auto";
+      document.onscroll = null
     }
   }
 };
