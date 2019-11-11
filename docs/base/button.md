@@ -124,12 +124,25 @@
 
 <br>
 
+###### Attributes
+
+<br>
+
 | 属性 | 说明 | 类型 | 可选值 | 默认 |
 |--|--|--|--|--|
 | size |  按钮的尺寸 | String | large/small | normal |
-| type | 按钮的类型 | String | default/primary/success/<br>/warning/error | default |
+| type | 按钮的类型 | String | primary/success/<br>/warning/error | primary |
 | long |  长按钮 | Boolean | true/false | false |
 | round | 圆角按钮  | Boolean | true/false | false |
 | circle |  圆形按钮 | Boolean | true/false | false |
 | disabled |  是否禁用按钮 | Boolean | true/false | false |
 | styles |  自定义按钮样式 | Object |  | 无 |
+
+###### Events
+
+<br>
+
+| 事件名 | 说明 | 回调参数 | 
+|--|--|--|
+| click |  点击按钮时触发 | 无 |
+

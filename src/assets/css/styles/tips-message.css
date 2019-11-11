@@ -2,7 +2,7 @@
 .x-tips-message .x-tips-message-text{display: inline-block;padding: 6px 15px;box-shadow: 0 1px 6px rgba(0,0,0,.2);min-width: 150px;text-align: left;border-radius: 4px;color: #5e5a6a;
 background: white;}
 .x-tips-message .x-tips-message-text i{font-size: 16px}
-.x-tips-message .x-tips-message-text .x-tips-message-msg{display: inline-block;margin-bottom: 5px;font-size: 14px}
+.x-tips-message .x-tips-message-text .x-tips-message-msg{display: inline-block;font-size: 14px}
 .x-tips-message .x-tips-message-text .x-iconprompt_fill{color: #38A0F3}
 .x-tips-message .x-tips-message-text .x-iconsuccess_fill{color: #19be6b}
 .x-tips-message .x-tips-message-text .x-iconwarning_fill{color: #ff9900}
