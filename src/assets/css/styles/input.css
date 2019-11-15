@@ -1,0 +1,18 @@
+
+.x-input{width: 100%;box-sizing: border-box;position: relative;height: 35px;}
+.x-input .close{display: inline-block;width: 18px;height: 18px;position: absolute;right: 15px;top: 50%;transform: translate(0,-50%);background: rgba(0, 0, 0, .45);border-radius: 50%;z-index: 2;}
+.x-input .visible{ display: inline-block;width: 15px;height: 15px;line-height: 15px;position: absolute;right: 15px;top: 50%;transform: translate(0,-50%)}
+.x-input .x-before{display: inline-block;z-index: 30;position: absolute;left: 10px;top: 50%;transform: translate(0,-50%)}
+.x-input .x-after{display: inline-block;z-index: 30;position: absolute;right: 10px;top: 50%;transform: translate(0,-50%)}
+
+.x-input .close,.visible:hover{cursor: pointer;}
+.x-input .x-iconclose{font-size: 12px;color: white;display: inline-block;text-align: center}
+.x-input.large {height: 40px;}
+.x-input.small {height: 25px;}
+.x-input.small .close{width: 16px;height: 16px;line-height: 16px;}
+.x-input.small .x-iconclose{transform: scale(.8)}
+.x-input .x-input-text{width: 100%;height: inherit;display: inline-block;border: 1px solid #dcdee2;border-radius: 4px;outline: none;text-indent: 10px;
+    color: #515a6e;background-color: #fff;background-image: none;position: relative;cursor: text;transition: border .2s ease-in-out,box-shadow .2s ease-in-out;}
+.x-input .x-input-text:focus{box-shadow:#409EFF 0px 0px 4px;border: 1px solid #409EFF}
+.x-input .x-input-text:hover{border: 1px solid #409EFF}
+.x-input .x-input-text::placeholder{color: #cdcdcd}

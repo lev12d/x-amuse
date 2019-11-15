@@ -1,15 +1,21 @@
 <p align="center">
-  <img src="assets/v.jpeg" style="max-width: 500px; width: 200px">
+  <img src="assets/logo.jpg" style="max-width: 500px; width: 300px">
 </p>
 
-> A Vue.js 2.0 universal responsive UI component library.
+> A Vue.js 2.X universal responsive UI component library.
 
 <p align="center">
-  <a href="https://travis-ci.org/osiris-ui/osiris">
-    <img src="https://travis-ci.org/osiris-ui/osiris.svg?branch=master">
+  <a href="https://www.npmjs.com/package/x-amuse">
+    <img src="https://img.shields.io/npm/dw/x-amuse">
   </a>
-  <a href="https://npmjs.com/package/@osiris-ui/osiris">
-    <img src="https://img.shields.io/npm/v/@osiris-ui/osiris.svg?colorB=0099f9">
+  <a href="https://www.npmjs.com/package/x-amuse">
+    <img src="https://img.shields.io/npm/v/x-amuse">
+  </a>
+   <a href="https://www.npmjs.com/package/x-amuse">
+    <img src="https://img.shields.io/npm/l/x-amuse">
+  </a>
+  <a href="https://www.npmjs.com/package/x-amuse">
+    <img src="https://img.shields.io/bundlephobia/min/x-amuse">
   </a>
 </p>
 

@@ -22,7 +22,8 @@
            }
        },
        methods : {
-           onChange(){
+           onChange(e){
+             //console.log(e.target.checked)
               // do something
            }
        }

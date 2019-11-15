@@ -9,6 +9,7 @@ import XSwitch from './lib/package/switch/index.js'
 import XCheckbox from './lib/package/checkbox/index.js'
 import XPopup from './lib/package/popup/index.js'
 import XTooltip from './lib/package/tooltip/index.js'
+import XInput from './lib/package/input/index.js'
 
 const components = [
     XButton,
@@ -19,7 +20,8 @@ const components = [
     XSwitch,
     XCheckbox,
     XPopup,
-    XTooltip
+    XTooltip,
+    XInput
 ]
 
  const install = function(Vue, options = {}){
@@ -36,7 +38,7 @@ if (typeof window !== 'undefined' && window.Vue) {
   }
 
   export default {
-      version:'0.0.1',
+      version:'1.0.4',
       install,
       XButton,
       XButtonGroup,
@@ -47,5 +49,6 @@ if (typeof window !== 'undefined' && window.Vue) {
       XSwitch,
       XCheckbox,
       XPopup,
-      XTooltip
+      XTooltip,
+      XInput
   }

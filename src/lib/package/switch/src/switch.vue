@@ -40,7 +40,8 @@ export default {
     handleClick() {
       if (!this.disabled) {
         this.values = !this.values;
-        this.$emit("onChange", this.values);
+        this.$emit("input", this.values);
+        this.$emit("onchange", this.values);
       }
     }
   },

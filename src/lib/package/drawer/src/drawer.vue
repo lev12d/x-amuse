@@ -49,6 +49,7 @@ export default {
   methods: {
     close() {
       this.$emit("input", false);
+      this.$emit("close")
     }
   },
   watch: {

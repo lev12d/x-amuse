@@ -67,7 +67,7 @@
            <x-drawer v-model="flag2" placement="left" :title="str" closeable width="50%"></x-drawer>
 
            <h3>switch开关</h3>
-           <x-switch v-model="switchFlag" @onChange="handleChange"></x-switch>
+           <x-switch v-model="switchFlag" @onchange="handleChange"></x-switch>
            <h4>不同尺寸的开关switch</h4>
            <x-switch size="large"></x-switch>
            <x-switch size="small"></x-switch>
@@ -84,7 +84,7 @@
            <h4>被禁用的switch开关</h4>
             <x-switch disabled></x-switch>
            <h4>自定义背景颜色的switch开关</h4>
-            <x-switch open-bg-color="red" close-bg-color="yellow"></x-switch>
+            <x-switch open-bg-color="red" close-bg-color="yellow" ></x-switch>
 
             <h3>checkbox多选框</h3>
             <x-checkbox v-model="checked" @change="aaa">选项</x-checkbox>
@@ -106,6 +106,16 @@
             <x-tooltip content="这是一段click触发的提示信息" :disabled="false" trigger="click">
                 <x-button>click触发</x-button>
             </x-tooltip>
+            <h3>输入框</h3>
+            {{ value }}
+             <x-input   size="large" width="200px" v-model="value0" clearable></x-input><br>
+            <x-input v-model="value" @change="onInput" clearable type="password"></x-input> <br>
+             <x-input   size="small" v-model="value1" clearable></x-input><br>
+             <x-input v-model="value2" type="password"  ></x-input> <br>
+              <x-input v-model="value3"  >
+                   <span slot="before" > <i class="x-iconmine" @click="qwe" ></i> </span>
+                    <span slot="after"> <i class="x-iconsearch" @click="qwe"></i> </span>
+                </x-input> <br>
   </div>
 </template>
 
@@ -119,10 +129,21 @@ export default {
       str:'左边头部',
       switchFlag:false,
       checked:false,
-      popupVal:false
+      popupVal:false,
+      value0:'',
+      value:'',
+      value1:'',
+      value2:'',
+      value3:''
     }
   },
   methods:{
+    qwe(){
+     console.log(11)
+    },
+    onInput(v){
+       //console.log(v)
+    },
     clk(){
        this.$tips({
          message:'这是一段警告信息',
@@ -144,6 +165,7 @@ export default {
       //   message:'现在的状态为：'+status,
       //   type:'error'
       // }) 或者
+      console.log(status)
       this.$tips.success('现在的状态为：'+ status)
     },
     aaa(evt){
@@ -167,7 +189,7 @@ export default {
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

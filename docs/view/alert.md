@@ -113,6 +113,7 @@
    export default { }
 </script>
 ```
+<br>
 
 #### API
 
@@ -124,11 +125,18 @@
 
 | 属性 | 说明 | 类型 | 可选值 | 默认 |
 |--|--|--|--|--|
-| type | 弹出提示的类型 | String | primary/success/<br>/warning/error | primary |
+| type | alert提示的类型 | String | primary/success/<br>/warning/error | primary |
 | closeable |  能否关闭 | Boolean/String | true/false | false |
 | close-text | 自定义关闭的信息  | String | 无 | 无 |
 | show-icon |  是否显示图标 | Boolean/String | true/false | false |
 
+###### Slots
+
+<br>
+
+| 名称 | 说明 |
+|--|--|
+| desc| 辅助性的文字说明 | 
 
 ###### Events
 

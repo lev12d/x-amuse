@@ -1,6 +1,8 @@
 # x-amuse
-
-> A Vue.js 2.0 UI Toolkit for Web
+<p align="center">
+  <img src="./docs/assets/logo.jpg" style="max-width: 500px; width: 500px">
+</p>
+> A Vue.js 2.X UI Toolkit for Web
 
 ## Build Setup
 

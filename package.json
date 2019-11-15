@@ -1,7 +1,7 @@
 {
   "name": "x-amuse",
   "description": "A Vue.js 2.0 UI Toolkit for Web",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "author": "xhj <1411693091@qq.com>",
   "license": "MIT",
   "private": false,
