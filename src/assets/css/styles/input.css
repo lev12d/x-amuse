@@ -4,6 +4,9 @@
 .x-input .visible{ display: inline-block;width: 15px;height: 15px;line-height: 15px;position: absolute;right: 15px;top: 50%;transform: translate(0,-50%)}
 .x-input .x-before{display: inline-block;z-index: 30;position: absolute;left: 10px;top: 50%;transform: translate(0,-50%)}
 .x-input .x-after{display: inline-block;z-index: 30;position: absolute;right: 10px;top: 50%;transform: translate(0,-50%)}
+.x-input.x-input-disabled .x-input-text{opacity: .5;background: #f2f2f2}
+.x-input.x-input-disabled .x-input-text:hover{cursor: not-allowed;border: 1px solid #ccc}
+.x-input .x-word-limit{display: inline-block;position: absolute;right: 10px;top: 50%;transform: translate(0,-50%);font-size: 12px;color: #f52b2b}
 
 .x-input .close,.visible:hover{cursor: pointer;}
 .x-input .x-iconclose{font-size: 12px;color: white;display: inline-block;text-align: center}

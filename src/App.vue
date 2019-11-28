@@ -116,6 +116,8 @@
                    <span slot="before" > <i class="x-iconmine" @click="qwe" ></i> </span>
                     <span slot="after"> <i class="x-iconsearch" @click="qwe"></i> </span>
                 </x-input> <br>
+                <x-input v-model="value4" disabled  ></x-input> <br>
+                 <x-input v-model="value5"  word-limit maxlength="15" ></x-input> <br>
   </div>
 </template>
 
@@ -134,7 +136,9 @@ export default {
       value:'',
       value1:'',
       value2:'',
-      value3:''
+      value3:'',
+      value4:'',
+      value5:''
     }
   },
   methods:{

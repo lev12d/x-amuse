@@ -1,5 +1,5 @@
 <template>
-    <div :class="['x-input',{
+    <div :class="['x-input',disabled?'x-input-disabled':'',{
          'large':size == 'large',
          'small':size == 'small'
     }]" :style="`width:${width}`" @mouseenter="onEnter" @mouseleave="onLeave">
@@ -19,7 +19,8 @@
            @blur="handleBlur"
            @focus="handleFocus"
            :placeholder="placeholder"
-           
+           :disabled="disabled"
+           :maxlength="maxlength"
          />
          <span class="close" v-if="hover && v && clearable" @click="onClear">
               <i class="x-iconclose"></i>
@@ -31,6 +32,10 @@
          <span class="x-after" >
               <slot name="after"></slot>
          </span>
+
+         <span class="x-word-limit" v-if="wordLimit && (maxlength >= 0)">
+                {{inputLength}}/{{maxlength}}
+         </span>
     </div>
 </template>
 
@@ -41,7 +46,8 @@
            return{
                v:'',
                hover:false,
-               typeChange:''
+               typeChange:'',
+               inputLength:0
            }
         },
          props:{
@@ -59,7 +65,16 @@
                 type : Boolean,
                 default: false
             },
-            width:String
+            width:String,
+            disabled : {
+                type : Boolean,
+                default : false
+            },
+            maxlength:[Number,String],
+            wordLimit:{
+                type : Boolean,
+                default: false
+            }
         },
         computed:{
             getCurrentValue(){
@@ -105,6 +120,9 @@
         watch:{
             value:function(){
                 this.v = this.value
+                if(this.wordLimit && (this.maxlength >= 0)){
+                    this.inputLength = this.$refs.input.value.length
+                }
             }
         }
     }

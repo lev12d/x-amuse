@@ -178,6 +178,31 @@ export default {
 
 <br>
 
+#### 禁用状态的输入框
+
+通过`disabled`属性可以禁用输入框。
+
+```html
+/*vue*/
+
+<template>
+    <div>
+      <x-input disabled></x-input>
+    </div>
+</template>
+
+<script>
+export default {
+ data: ()=> {
+        return {
+
+        }
+      }
+    }
+</script>
+```
+<br>
+
 #### API
 
 <br>
